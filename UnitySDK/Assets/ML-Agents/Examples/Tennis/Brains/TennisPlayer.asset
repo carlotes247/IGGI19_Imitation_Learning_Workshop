@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TennisPlayer
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 8
+    vectorObservationSize: 6
     numStackedVectorObservations: 3
     vectorActionSize: 02000000
     cameraResolutions: []

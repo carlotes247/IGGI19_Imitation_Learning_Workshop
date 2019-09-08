@@ -50,8 +50,8 @@ public class TennisAgent : Agent
     {
         AddVectorObs(invertMult * (transform.position.x - myArea.transform.position.x));
         AddVectorObs(transform.position.y - myArea.transform.position.y);
-        AddVectorObs(invertMult * agentRb.velocity.x);
-        AddVectorObs(agentRb.velocity.y);
+        //AddVectorObs(invertMult * agentRb.velocity.x);
+        //AddVectorObs(agentRb.velocity.y);
 
         AddVectorObs(invertMult * (ball.transform.position.x - myArea.transform.position.x));
         AddVectorObs(ball.transform.position.y - myArea.transform.position.y);

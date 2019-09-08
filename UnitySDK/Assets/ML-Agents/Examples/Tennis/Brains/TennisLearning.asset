@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TennisLearning
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 8
+    vectorObservationSize: 6
     numStackedVectorObservations: 3
     vectorActionSize: 02000000
     cameraResolutions: []
@@ -20,5 +20,5 @@ MonoBehaviour:
     - 
     - 
     vectorActionSpaceType: 1
-  model: {fileID: 11400000, guid: 0b22bc7e45e8347fd897bdf0e1d38c6e, type: 3}
+  model: {fileID: 0}
   inferenceDevice: 0
