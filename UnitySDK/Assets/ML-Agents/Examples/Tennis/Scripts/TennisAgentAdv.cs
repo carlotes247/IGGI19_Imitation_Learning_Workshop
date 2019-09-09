@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using MLAgents;
 
-public class TennisAgent : Agent
+public class TennisAgentAdv : Agent
 {
     [Header("Specific to Tennis")]
     public GameObject ball;
@@ -50,11 +50,13 @@ public class TennisAgent : Agent
     {
         AddVectorObs(invertMult * (transform.position.x - myArea.transform.position.x));
         AddVectorObs(transform.position.y - myArea.transform.position.y);
- 
+        AddVectorObs(invertMult * agentRb.velocity.x);
+        AddVectorObs(agentRb.velocity.y);
 
         AddVectorObs(invertMult * (ball.transform.position.x - myArea.transform.position.x));
         AddVectorObs(ball.transform.position.y - myArea.transform.position.y);
-
+        AddVectorObs(invertMult * ballRb.velocity.x);
+        AddVectorObs(ballRb.velocity.y);
     }
 
 
