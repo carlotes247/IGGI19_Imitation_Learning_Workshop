@@ -48,13 +48,18 @@ public class TennisAgentAdv : Agent
 
     public override void CollectObservations()
     {
+        // We add the observations for our imitation learning agent
+        // Padel position relative to the center of the pitch (x,y)
         AddVectorObs(invertMult * (transform.position.x - myArea.transform.position.x));
         AddVectorObs(transform.position.y - myArea.transform.position.y);
+        // Padel velocity (x,y)
         AddVectorObs(invertMult * agentRb.velocity.x);
         AddVectorObs(agentRb.velocity.y);
 
+        // Ball position relative to the center of the pitch (x,y)
         AddVectorObs(invertMult * (ball.transform.position.x - myArea.transform.position.x));
         AddVectorObs(ball.transform.position.y - myArea.transform.position.y);
+        // Ball velocity (x,y)
         AddVectorObs(invertMult * ballRb.velocity.x);
         AddVectorObs(ballRb.velocity.y);
     }
