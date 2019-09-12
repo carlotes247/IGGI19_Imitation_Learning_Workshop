@@ -1,3 +1,9 @@
+# This is the repo (from the Unity ML-Agents main repo) for the IMITATION LEARNING WORKSHOP at [IGGI2019](http://2019.iggi.org.uk/)
+## The workshop was run by [Cristina Dobre](https://twitter.com/shesCristina) and [Carlos Gonzalez Diaz](https://twitter.com/Carlotes247)
+Thank you so such if you have participated. If you have any questions or feedback, please feel free to get in touch! Also, if you'd like to have a look at the slides I used, [you can find the presentation at this link](https://docs.google.com/presentation/d/1Q7S3RcUPYF3c8m5Y22ruEv24_OBPnffpIoDStV60VY4/edit?usp=sharing).
+
+
+__________________________________________________________________
 <img src="docs/images/unity-wide.png" align="middle" width="3000"/>
 
 <img src="docs/images/image-banner.png" align="middle" width="3000"/>
